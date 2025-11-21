@@ -7,7 +7,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
 
-        int[] originalArray = generate(50000);
+        int[] originalArray = generate(500000);
 
         int[] array1000 = new int[1000];
         System.arraycopy(originalArray, 0, array1000, 0, 1000);
@@ -18,13 +18,13 @@ public class App {
         int[] array10000 = new int[10000];
         System.arraycopy(originalArray, 0, array10000, 0, 10000);
 
-        // int[] array100000 = new int[100000];
-        // System.arraycopy(originalArray, 0, array100000, 0, 100000);
+        int[] array100000 = new int[100000];
+        System.arraycopy(originalArray, 0, array100000, 0, 100000);
 
-        // int[] array250000 = new int[250000];
-        // System.arraycopy(originalArray, 0, array250000, 0, 250000);
+        int[] array250000 = new int[250000];
+        System.arraycopy(originalArray, 0, array250000, 0, 250000);
 
-        int[][] arrays = {array1000, array5000, array10000 ,originalArray};
+        int[][] arrays = {array1000, array5000, array10000, array100000, array250000 ,originalArray};
         SortMethods sorter = new SortMethods();
         System.out.println("Burbuja");
         for (int[] array : arrays) {
